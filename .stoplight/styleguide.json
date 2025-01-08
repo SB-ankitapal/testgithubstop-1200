@@ -1,0 +1,28 @@
+{
+  "name": "TestGithubStop-1200",
+  "description": "",
+  "spectralExtends": [],
+  "extends": [],
+  "formats": [
+    "oas2",
+    "oas3",
+    "oas3.0",
+    "oas3.1"
+  ],
+  "aliases": {},
+  "rules": {
+    "TestRule": {
+      "id": "Mg2oaqMih52rXyp6mqyEK",
+      "given": [
+        ""
+      ],
+      "severity": "error",
+      "then": {
+        "function": "undefined"
+      },
+      "name": "TestRule",
+      "message": "TestRules"
+    }
+  },
+  "extendedDefault": false
+}

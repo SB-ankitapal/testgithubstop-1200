@@ -1,0 +1,14 @@
+title: Animal.v1
+x-stoplight:
+  id: wtbh9olhmhqnz
+type: object
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: eou1gzdcn9j4s
+  legs:
+    type: string
+    x-stoplight:
+      id: lyydwn5h9h89v
+description: Abstract Animal

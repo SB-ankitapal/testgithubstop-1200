@@ -1,0 +1,55 @@
+swagger: '2.0'
+x-stoplight:
+  id: fea9r5g60y919
+info:
+  title: Patrick-API
+  version: '1.0'
+host: 'localhost:3000'
+schemes:
+  - http
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /v1/animals:
+    get:
+      summary: get
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Bird.v1'
+      operationId: get-v1-animals
+      x-stoplight:
+        id: vrp3xvz1b6n9x
+definitions:
+  Animal.v1:
+    description: bird animal
+    x-proto-indexes: 100
+    title: Animal.v1
+    x-stoplight:
+      id: osf8e0qw0p3qj
+    type: object
+    properties:
+      id:
+        type: string
+      legs:
+        type: string
+  Bird.v1:
+    x-stoplight:
+      id: 9l9cd7h5elbm0
+    description: Bird description
+    type: object
+    properties:
+      animal:
+        $ref: '#/definitions/Animal.v1'
+        description: bird animal
+        x-proto-indexes: 100
+      isflying:
+        type: string
+        x-proto-indexes: 2

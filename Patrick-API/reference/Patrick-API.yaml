@@ -1,0 +1,30 @@
+swagger: '2.0'
+x-stoplight:
+  id: u5mh1dtm3mtks
+info:
+  title: Patrick-API
+  version: '1.0'
+host: 'localhost:3000'
+schemes:
+  - http
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /v1/animals:
+    get:
+      summary: get
+      tags: []
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../models/Bird.v1.yaml
+      operationId: get-v1-animals
+      x-stoplight:
+        id: q4y2effuu2uwx
+definitions: {}

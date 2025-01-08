@@ -1,0 +1,34 @@
+{
+  "name": "Patrick-API",
+  "description": "",
+  "spectralExtends": [],
+  "extends": [
+    "cHJqOjEzODQ2NQ"
+  ],
+  "formats": [
+    "oas2",
+    "oas3",
+    "oas3.0",
+    "oas3.1"
+  ],
+  "aliases": {},
+  "rules": {},
+  "extendedStyleguides": [
+    {
+      "id": "cHJqOjEzODQ2NQ",
+      "name": "JSON:API",
+      "slug": "json-api",
+      "workspace": {
+        "slug": "apistylebook",
+        "name": "API Stylebook"
+      },
+      "icon": "exchange-alt",
+      "color": "#bc48cb",
+      "description": "Guidelines for the JSON:API specification.",
+      "latestRelease": {
+        "release": 6
+      }
+    }
+  ],
+  "extendedDefault": true
+}

@@ -1,0 +1,16 @@
+description: Bird description
+x-stoplight:
+  id: 10yw4l8ezn9yl
+type: object
+properties:
+  animal:
+    $ref: ./Animal.v1.yaml
+    description: bird animal
+    x-proto-indexes: 100
+    x-stoplight:
+      id: 0ukxy5r0c8qjo
+  isflying:
+    type: string
+    x-proto-indexes: 2
+    x-stoplight:
+      id: ovcyr1ema2bza
