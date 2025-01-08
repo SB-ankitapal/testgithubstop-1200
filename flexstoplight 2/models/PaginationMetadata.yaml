@@ -1,0 +1,39 @@
+title: PaginationMetadata
+x-stoplight:
+  id: 3c9m781vt04um
+type: object
+description: Represents metadata describing the pagination results
+properties:
+  total:
+    type: integer
+    description: The total number of results that match the search criteria
+    x-stoplight:
+      id: i8400k9j6vxmd
+  page:
+    type: integer
+    description: The current page of results
+    x-stoplight:
+      id: 93xn6gjmabyx6
+  pageSize:
+    type: integer
+    description: The number of results returned per page
+    x-stoplight:
+      id: w3wyllz0zb4io
+  sort:
+    type: string
+    enum:
+      - asc
+      - desc
+    description: The sort order of results
+    x-stoplight:
+      id: 0wt77q6wlo3r6
+  nextToken:
+    type: string
+    description: A token to retrieve the next set of results
+    x-stoplight:
+      id: cydnenfe8b191
+required:
+  - total
+  - page
+  - pageSize
+  - sort

@@ -1,0 +1,57 @@
+title: PromoCode
+x-stoplight:
+  id: 53b7da9p2m5rm
+type: object
+description: Represents a promotional code
+properties:
+  id:
+    type: string
+    format: uuid
+    description: The promotional code identifier
+    readOnly: true
+    x-stoplight:
+      id: b76lhwgco30da
+  value:
+    type: string
+    x-stoplight:
+      id: b3mslv4cc7pqq
+    description: The promotional code value
+    maxLength: 30
+    minLength: 3
+  description:
+    type: string
+    x-stoplight:
+      id: vin6t5v6x84ui
+    maxLength: 256
+    description: A short description of the promotional code
+  startDate:
+    type: string
+    x-stoplight:
+      id: bpkjxased5tm0
+    format: date-time
+    description: The timestamp when the PromoCode should begin
+  endDate:
+    type: string
+    x-stoplight:
+      id: 6bia7lsl7frms
+    format: date-time
+    description: The timestamp when the PromoCode should expire
+  products:
+    type: array
+    x-stoplight:
+      id: cw76mvsir7twp
+    items:
+      x-stoplight:
+        id: sg8i45camiav3
+      type: string
+  uwReject:
+    type: boolean
+    x-stoplight:
+      id: qmzfsamfn9cfx
+  level:
+    type: string
+    x-stoplight:
+      id: 2au5crsphtrg4
+required:
+  - id
+  - value

@@ -1,0 +1,115 @@
+title: HubspotContact
+x-stoplight:
+  id: 8yq4gqvgtaqvf
+type: object
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: qinvpe69yxvwz
+  bankingApplicationStatus:
+    type: string
+    x-stoplight:
+      id: 0351tmoxdbo39
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  creditApplicationStatus:
+    type: string
+    x-stoplight:
+      id: pdmczz2c1p1zf
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  userType:
+    type: string
+    x-stoplight:
+      id: pn4ztkhjwegis
+    enum:
+      - employee
+      - owner
+      - accountant
+      - auditor
+      - admin
+  lastLogin:
+    type: string
+    x-stoplight:
+      id: msioqhth3ag6e
+    format: date-time
+  flexUserId:
+    type: string
+    x-stoplight:
+      id: y6tz7px6fvvqv
+    format: uuid
+  flexCompanyId:
+    type: string
+    x-stoplight:
+      id: onel5tdw5keof
+    format: uuid
+  firstName:
+    type: string
+    x-stoplight:
+      id: 5vcdewzfunys1
+  lastName:
+    type: string
+    x-stoplight:
+      id: afcpjzs4vqd1m
+  email:
+    type: string
+    x-stoplight:
+      id: sggk8p6rw2w8r
+  status:
+    type: string
+    x-stoplight:
+      id: 0p5ymqtunwfc7
+  bankingApplicant:
+    type: string
+    x-stoplight:
+      id: t5g6a0wgyjhh6
+    enum:
+      - 'yes'
+      - 'no'
+  creditApplicant:
+    type: string
+    x-stoplight:
+      id: 7bmkmglwky6ol
+    enum:
+      - 'yes'
+      - 'no'
+  authorizedSignatory:
+    type: boolean
+    x-stoplight:
+      id: cnp4yrh88mzfv
+  ficoBand:
+    type: string
+    x-stoplight:
+      id: j9prq1cttji7f
+    enum:
+      - NOT_PROCESSED_YET
+      - super_prime
+      - prime
+      - near_prime
+      - subprime
+  ficoStatus:
+    type: string
+    x-stoplight:
+      id: o9g8pkeqkuxsf
+    enum:
+      - frozen
+      - unfrozen
+  kycPassed:
+    type: boolean
+    x-stoplight:
+      id: 05a3zjp7gzzv6
+  kycPassedDate:
+    type: string
+    x-stoplight:
+      id: 4jex7lk7brp8s
+    format: date-time
+description: Fields to be written from Flex to the Hubspot Contact Entity

@@ -1,0 +1,109 @@
+title: HubspotUnderwriting
+x-stoplight:
+  id: n7io55e9jkw2u
+type: object
+description: Fields to be written from Flex to the Hubspot Underwriting Entity
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: 1falzfx11gyk7
+  bankingApplicationStatus:
+    type: string
+    x-stoplight:
+      id: gepwk41erozjm
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  creditApplicationStatus:
+    type: string
+    x-stoplight:
+      id: xirr48mfsie4w
+    enum:
+      - unused
+      - incomplete
+      - pending
+      - approved
+      - denied
+  userType:
+    type: string
+    x-stoplight:
+      id: s3lfdsowwxgrn
+    enum:
+      - employee
+      - owner
+      - accountant
+      - auditor
+      - admin
+  flexUserId:
+    type: string
+    x-stoplight:
+      id: q61d56zqnvpiz
+    format: uuid
+  flexCompanyId:
+    type: string
+    x-stoplight:
+      id: 8mu1drgrnli8k
+    format: uuid
+  bankingApplicant:
+    type: string
+    x-stoplight:
+      id: 0tohi8xmi0cmb
+    enum:
+      - 'yes'
+      - 'no'
+  creditApplicant:
+    type: string
+    x-stoplight:
+      id: tlclisnz15yfb
+    enum:
+      - 'yes'
+      - 'no'
+  ficoBand:
+    type: string
+    x-stoplight:
+      id: gas7f7f436l0e
+    enum:
+      - NOT_PROCESSED_YET
+      - super_prime
+      - prime
+      - near_prime
+      - subprime
+  ficoStatus:
+    type: string
+    x-stoplight:
+      id: 1jo1t0n9aklrn
+    enum:
+      - frozen
+      - unfrozen
+  kycPassed:
+    type: boolean
+    x-stoplight:
+      id: k8q7mw49tt6by
+  kycPassedDate:
+    type: string
+    x-stoplight:
+      id: pvw7n2m3grp7i
+    format: date-time
+  creditLimit:
+    type: number
+    x-stoplight:
+      id: tcd48j645qtg9
+  lithicId:
+    type: string
+    x-stoplight:
+      id: gzyv29lpbw058
+    format: uuid
+  unitId:
+    type: string
+    x-stoplight:
+      id: 0xy3glogx4u4f
+    format: uuid
+  creditLineApproved:
+    type: string
+    x-stoplight:
+      id: 6j1lyzxdqjwxn
+    format: date-time
